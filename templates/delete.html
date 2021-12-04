@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block body %}
+    <div class="card">
+        <div class="card-header">
+            Delete Task
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <form method="post" class="row">
+                    {% csrf_token %}
+                    <p class="bold">Are you sure that you want to delete <span class="taskhighlight">{{ task.task }}</span> ?</p>
+                    <div class="col-12">
+                        <a href="{% url 'index' %}" class="btn btn-info text-white">No, go back</a>
+                        <button class="btn btn-danger" type="submit" id="new-task-button2">Yes, delete</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

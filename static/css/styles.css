@@ -1,0 +1,36 @@
+html{
+    height: 100%;
+    background-color: #fafafa;
+}
+body{
+    background-color: #fafafa;
+}
+
+.task{
+    background-color: #fff;
+    border: 1px solid silver;
+    padding: 10px;
+    margin: 10px;
+}
+
+small{
+    color:gray;
+}
+.completedbg{
+    background-color:  #eeeeee;
+}
+.completed{
+    text-decoration: line-through;
+}
+.not-completed{
+    background-color: white;
+}
+
+.taskhighlight
+{
+    color: #fe6993;
+    background-color: rgba(254,105,147,0.1);
+    border-radius: 3px;
+    padding: 0.2em;
+    line-height: 2em;
+}
